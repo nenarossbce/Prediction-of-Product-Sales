@@ -81,6 +81,58 @@ For this dataset, there were 8523 rows and 12 columns.
 
 The model can be used to determine which outlet produces the most sales and which store are not doing so well. 
 
+## Model Insights 
+
+### LinearRegression coefficients plot: 
+
+![Linear_Regression_coefficient_plot](http://localhost:8888/view/top_15_coeffs.png)
+
+* Outlet_Type_Supermarket Type 3 positively influence the model. Type 3 stores show to bring in the most revenue. These stores increase revnue by $1624.81.
+
+* Item_MRP positively influences the model. Item_MRP increases value by $984.32.  
+
+* Outlet_Type_Grocery Store negatively impacts the model. The grocery store seems to bring in the least amount of revnue. Grocery store decrease the revnue by $1741.07
+
+### Random Forest Feature Importances: 
+
+![RF_Feature_Importances_plot](http://localhost:8888/view/rf_importances.png)
+
+
+Top 5 Important Features from our Random Forest model 
+
+* Item MRP is the most important feature 
+
+* Outlet Type Grocery Store second most important 
+
+* Item Visibility 
+
+* Outlet Type Supermarket Type 3  
+
+* Item Weight 
+
+
+### Explaining Models with Shap
+
+#### Global Explanations
+
+![SHAP_Summary_Bar_plot](http://localhost:8888/view/shap_summary_bar.png)
+
+* The shap summary is showing the same 5 but the order for Item Visibility and Supermarket Type 3 are in ranking differently. The Tree model has Supermarket Type 3 in 4 and Item Visibility in 3, while the SHAP summary has Supermarket Type 3 in 3 and Item visibility in 4. 
+
+![SHAP_Summary_dot_plot](http://localhost:8888/view/shap_summary_dot.png)
+
+* Item MRP is increasing as the SHAP value increases. This seems to have a positive effect on our model. 
+
+* Outlet Type Grocery Store is a one hot-encoded, the blue is positively effecting the model and the red is negatively decreasing the models predictions. The blue seems to be more impactful in the model predictions of revnue. 
+
+* Supermarket Type 3 is one hot encoded and the blue is negatively impacting the models predictions and the red is postively impacting the predicions. 
+
+### Local Explanations:
+![lr_exp_plot](http://localhost:8888/view/linreg_explainer.png)
+
+
+![lr_exp_plot](http://localhost:8888/view/lr_force_plot.png)
+
 ## Recommendations:
 * Look into closing stores that are underperforming.
 
