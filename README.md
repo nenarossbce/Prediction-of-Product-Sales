@@ -85,7 +85,7 @@ The model can be used to determine which outlet produces the most sales and whic
 
 ### LinearRegression coefficients plot: 
 
-![Linear_Regression_coefficient_plot](http://localhost:8888/view/top_15_coeffs.png)
+![Linear_Regression_coefficient_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/top_15_coeffs.png)
 
 * Outlet_Type_Supermarket Type 3 positively influence the model. Type 3 stores show to bring in the most revenue. These stores increase revnue by $1624.81.
 
@@ -95,7 +95,7 @@ The model can be used to determine which outlet produces the most sales and whic
 
 ### Random Forest Feature Importances: 
 
-![RF_Feature_Importances_plot](http://localhost:8888/view/rf_importances.png)
+![RF_Feature_Importances_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/rf_importances.png)
 
 
 Top 5 Important Features from our Random Forest model 
@@ -113,13 +113,14 @@ Top 5 Important Features from our Random Forest model
 
 ### Explaining Models with Shap
 
+
 #### Global Explanations
 
-![SHAP_Summary_Bar_plot](http://localhost:8888/view/shap_summary_bar.png)
+![SHAP_Summary_Bar_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/shap_summary_bar.png)
 
 * The shap summary is showing the same 5 but the order for Item Visibility and Supermarket Type 3 are in ranking differently. The Tree model has Supermarket Type 3 in 4 and Item Visibility in 3, while the SHAP summary has Supermarket Type 3 in 3 and Item visibility in 4. 
 
-![SHAP_Summary_dot_plot](http://localhost:8888/view/shap_summary_dot.png)
+![SHAP_Summary_dot_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/shap_summary_dot.png)
 
 * Item MRP is increasing as the SHAP value increases. This seems to have a positive effect on our model. 
 
@@ -128,10 +129,14 @@ Top 5 Important Features from our Random Forest model
 * Supermarket Type 3 is one hot encoded and the blue is negatively impacting the models predictions and the red is postively impacting the predicions. 
 
 ### Local Explanations:
-![lr_exp_plot](http://localhost:8888/view/linreg_explainer.png)
+![lr_exp_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/linreg_explainer.png)
 
+* The model shows that grocery type and supermarket type heavily impact our model in a positive way. Grocery store type shows to improve the model by $1,670. Item MRP impacts the model in a negative way by $680.62. 
 
-![lr_exp_plot](http://localhost:8888/view/lr_force_plot.png)
+![lr_exp_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/lr_force_plot.png)
+
+* This force plot is showing that our linear regression model is supermarket type 3 our red values are increasing the value of our model. The Item MRP is reducing the value of our model. 
+
 
 ## Recommendations:
 * Look into closing stores that are underperforming.
