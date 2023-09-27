@@ -95,7 +95,7 @@ The model can be used to determine which outlet produces the most sales and whic
 
 ### Random Forest Feature Importances: 
 
-![RF_Feature_Importances_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/rf_importances.png)
+![RF_Feature_Importances_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/feature_importance_updated.png)
 
 
 Top 5 Important Features from our Random Forest model 
@@ -122,20 +122,20 @@ Top 5 Important Features from our Random Forest model
 
 ![SHAP_Summary_dot_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/shap_summary_dot.png)
 
-* Item MRP is increasing as the SHAP value increases. This seems to have a positive effect on our model. 
+* Item MRP is increasing the prediction in our model. The red shows to have a positive effect on our model. 
 
-* Outlet Type Grocery Store is a one hot-encoded, the blue is positively effecting the model and the red is negatively decreasing the models predictions. The blue seems to be more impactful in the model predictions of revnue. 
+* Outlet Type Grocery Store is showing that the blue is positively effecting the model and the red is negatively decreasing the models predictions. The blue seems to be more impactful in the model predictions of revnue. 
 
-* Supermarket Type 3 is one hot encoded and the blue is negatively impacting the models predictions and the red is postively impacting the predicions. 
+* Supermarket Type 3 is showing that the blue is negatively impacting the models predictions and the red is postively impacting the predicions. 
 
 ### Local Explanations:
 ![lr_exp_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/linreg_explainer.png)
 
-* The model shows that grocery type and supermarket type heavily impact our model in a positive way. Grocery store type shows to improve the model by $1,670. Item MRP impacts the model in a negative way by $680.62. 
+* The model shows that grocery type and supermarket type heavily impact our model in a positive way. Grocery store type shows that products sold improve the model by $1,670. Item MRP impacts the model in a negative way by $680.62. 
 
 ![lr_exp_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/lr_force_plot.png)
 
-* This force plot is showing that our linear regression model is supermarket type 3 our red values are increasing the value of our model. The Item MRP is reducing the value of our model. 
+* This force plot is showing that our linear regression model is supermarket type 3 reduced the predicted model and that could be because certain items are not being sold at this outlet. The Item MRP is reducing the prediction of our model. 
 
 
 ## Recommendations:
