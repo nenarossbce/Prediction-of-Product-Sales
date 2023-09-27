@@ -87,11 +87,11 @@ The model can be used to determine which outlet produces the most sales and whic
 
 ![Linear_Regression_coefficient_plot](https://github.com/nenarossbce/Prediction-of-Product-Sales/blob/main/top_15_coeffs.png)
 
-* Outlet_Type_Supermarket Type 3 positively influence the model. Type 3 stores show to bring in the most revenue. These stores increase revnue by $1624.81.
+ * Outlet_Type_Supermarket Type 3 positively influence the model. If a product is sold at a Supermarket Type 3 store the model predicts it will generate $1624.81 revenue. 
 
 * Item_MRP positively influences the model. Item_MRP increases value by $984.32.  
 
-* Outlet_Type_Grocery Store negatively impacts the model. The grocery store seems to bring in the least amount of revnue. Grocery store decrease the revnue by $1741.07
+* Outlet_Type_Grocery Store negatively impacts the model. If products are not being sold at the grocery stores they would see a decrease in revnue by $1741.07
 
 ### Random Forest Feature Importances: 
 
